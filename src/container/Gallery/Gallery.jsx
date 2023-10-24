@@ -15,9 +15,9 @@ const Gallery = () => {
     const {current} = scrollRef;
 
     if(direction === "left"){
-      current.scrollleft -= 300;
+      current.scrollLeft -= 300;
     }else{
-      current.scrollleft += 300;
+      current.scrollLeft += 300;
     }
   }
 
@@ -33,15 +33,15 @@ const Gallery = () => {
     <div className='app__gallery-images'>
       <div className='app__gallery-images_container' ref={scrollRef}>
         {g_images.map((image, index) =>(
-          <div className='app__gallery-images_card flex__center' key={'gallery_image-${index + 1}'}> 
+          <div className='app__gallery-images_card flex__center' key={index + 1}> 
           <img src={image} alt="gla" />
-          <BsInstagram className='gallery_image-icon'/>
+          <BsInstagram className='gallery__image-icon'/>
           </ div>
         ))}
       </div>
       <div className='app__gallery-images_arrows'>
-      <BsArrowLeftShort className='gallery-icon' onClick={() => scroll('left')}/> 
-      <BsArrowRightShort className='gallery-icon' onClick={() => scroll('right')}/>
+      <BsArrowLeftShort className='gallery__arrow-icon' onClick={() => scroll('left')}/> 
+      <BsArrowRightShort className='gallery__arrow-icon' onClick={() => scroll('right')}/>
       </div>
     </div>
   </div>
