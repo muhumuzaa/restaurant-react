@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# A Restaurant website developed using React JS
+
+![food](https://github.com/muhumuzaa/restaurant-react/assets/142443950/9738dd3d-585f-4a31-b56f-1bca204af2bd)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
